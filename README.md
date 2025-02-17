@@ -22,10 +22,9 @@ This script lets you give every player a short unique ID, that will make your li
    ```
 3. Put the `setPlayerSSN` export to your multicharacter `IF` you use manual mode, ESX is fully automated so you dont need to change anything
 4. You can use those exports in other resources (for example multicharacter for SSN display as on preview, or scoreboard to give player information about their SSN)
-   ```lua
+
 exports['r_uid']:getPlayerSSN(identifier)
 exports['r_uid']:changePlayerSSN(identifier, numb)
 exports['r_uid']:setPlayerSSN(identifier)
-   ```
 
 > **Note:** IF you need any help, then join my discord: [click](https://discord.gg/Yxx78f6rbG)
