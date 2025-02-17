@@ -26,5 +26,6 @@ This script lets you give every player a short unique ID, that will make your li
 exports['r_uid']:getPlayerSSN(identifier)
 exports['r_uid']:changePlayerSSN(identifier, numb)
 exports['r_uid']:setPlayerSSN(identifier)
+   ```
 
 > **Note:** IF you need any help, then join my discord: [click](https://discord.gg/Yxx78f6rbG)
