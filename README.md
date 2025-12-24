@@ -5,7 +5,7 @@ A fully rewritten and optimized Social Security Number (SSN) system for FiveM, s
 
 ---
 
-Discord: https://discord.gg/BrWyjeEp6y
+Discord: [CLICK!](https://discord.gg/YkDKe6vJQP)
 
 ## ✨ Features
 
