@@ -1,4 +1,4 @@
-# r_ssn – Universal SSN System for FiveM
+# Universal SSN System for FiveM
 
 **Version 2.0**  
 A fully rewritten and optimized Social Security Number (SSN) system for FiveM, supporting all major frameworks with automatic detection and standalone mode.
