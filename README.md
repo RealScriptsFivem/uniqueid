@@ -1,30 +1,37 @@
-# r_uid
+# r_ssn – Universal SSN System for FiveM
 
-This script lets you give every player a short unique ID, that will make your life easier, first of all, you can easily make this script work with your logging system and you can be sure which player is who, also those ID can be used as a flex factor for your players, the one who has a lower ID, started playing the server earlier. This system of SSN is used on most big server on fivem, so I decided to do one of myself.
-
----
-
-## Features
-
-- **Unique Identifier** Every player has a unique identifier.
-- **Dynamic System:** Identifiers go from 1 to how much your server had players.
-- **Exports** I created 3 basic exports for you to use with this resource.
-- **Auto ESX:** So basically it will work with `ESX_MULTICHARACTER` and give ID automaticly without you having to put the export to generate it anywhere!
+**Version 2.0**  
+A fully rewritten and optimized Social Security Number (SSN) system for FiveM, supporting all major frameworks with automatic detection and standalone mode.
 
 ---
 
-## Installation
+## ✨ Features
 
-1. **Download/Clone** the repository and place the `r_uid` folder into your FiveM resources directory.
-2. Add the following line to your `server.cfg`:
-   ```cfg
-   ensure r_uid
-   ```
-3. Put the `setPlayerSSN` export to your multicharacter `IF` you use manual mode, ESX is fully automated so you dont need to change anything
-4. You can use those exports in other resources (for example multicharacter for SSN display as on preview, or scoreboard to give player information about their SSN)
+- 🔄 **Fully rewritten in v2.0**
+- ⚡ Optimized database queries & logic
+- 🧠 Automatic framework detection (`auto` mode)
+- 🧩 Framework support:
+  - ESX
+  - QB-Core
+  - OX Core
+  - ND Core
+  - Standalone
+- 🆔 Automatic SSN generation for new characters
+- 🗃️ Database-wide SSN generation (online & offline players)
+- 📅 Birth-year based SSN formatting (framework-aware)
+- 🧪 Safe fallback for standalone servers
+- 🌍 Multi-language support via `Config.Translations`
+- 📤 Discord webhook logging
+- 🔌 Clean exports API for developers
 
-exports['r_uid']:getPlayerSSN(identifier)
-exports['r_uid']:changePlayerSSN(identifier, numb)
-exports['r_uid']:setPlayerSSN(identifier)
+---
 
-> **Note:** IF you need any help, then join my discord: [click](https://discord.gg/Yxx78f6rbG)
+## 🧠 How It Works
+
+- The script automatically creates an `ssn` column in your `users` table
+- SSNs are generated sequentially and **never duplicated**
+- Birth year is taken from the character data when available
+- Standalone servers fall back to system date
+- Supports **custom SSN formats**
+
+---
